@@ -101,6 +101,18 @@ header{
     margin-left: 45px;
 
 }
+#overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background: rgba(0, 0, 0, .4);
+    z-index: 4;
+    display: none;
+}
+#overlay.show{
+    display: initial;
+}
 /* menu button */
 .navbar__icons{
     display: flex;
@@ -410,4 +422,17 @@ header{
     text-decoration: none;
     color: var(--gray);
 
+}
+@media (min-width:62em){
+    .footer__heading{
+        text-align: center;
+    
+    }
+    .footer__contact{
+
+        margin-top: 5%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
 }
